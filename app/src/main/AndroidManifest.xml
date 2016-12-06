@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.examples.caique.examplesproject">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".simpleLists.endlessList.EndlessScrollerActivity"
+            android:label="@string/title_activity_endless_scroller"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simpleLists.endlessList.EndlessScrollerWithFilterActivity"
+            android:label="@string/title_activity_endless_scroller_filter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simpleLists.list.ListActivity"
+            android:label="@string/title_activity_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simpleLists.list.ListWithFilterActivity"
+            android:label="@string/title_activity_list_filter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simpleLists.list.ListWithBottomActivity"
+            android:label="@string/title_activity_list_bottom"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".databinding.simple.DataBindingActivity"
+            android:label="@string/title_activity_data_binding"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".detail.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bottom.BottomSheetActivity"
+            android:label="@string/title_activity_bottom"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
