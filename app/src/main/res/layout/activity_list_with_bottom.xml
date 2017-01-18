@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- CONTENT -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!-- CONTENT -->
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:behavior_scrolling_appbar_peek_height="@dimen/bottom_sheet_peek_height"
+        app:layout_behavior="@string/ScrollingAppBarLayoutBehavior">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/ivAppBarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/anchor_point"
+        android:background="@color/colorAccent"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/joker"
+        app:behavior_backdrop_peekHeight="@dimen/bottom_sheet_peek_height"
+        app:layout_behavior="@string/BackDropBottomSheetBehavior" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsvBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:anchorPoint="@dimen/anchor_point"
+        app:behavior_peekHeight="@dimen/bottom_sheet_peek_height"
+        app:layout_behavior="@string/BottomSheetBehaviorGoogleMapsLike">
+
+        <include
+            layout="@layout/content_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true" />
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:src="@android:drawable/ic_dialog_email"
+        app:layout_anchor="@+id/nsvBottom"
+        app:layout_anchorGravity="top|right|end"
+        app:layout_behavior="@string/ScrollAwareFABBehavior" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/merged_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:tag="modal-appbar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:behavior_merged_appbar_anchor_point="@dimen/anchor_point"
+        app:layout_behavior="@string/MergedAppBarLayoutBehavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimary" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/expanded_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/ic_close_white"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="Title" />
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

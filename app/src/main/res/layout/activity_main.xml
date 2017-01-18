@@ -1,56 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btList"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="List" />
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btListWithFilter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ListWithFilter" />
+        <Button
+            android:id="@+id/btList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List" />
 
-    <Button
-        android:id="@+id/btListWithBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ListWithBottom" />
+        <Button
+            android:id="@+id/btListWithFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListWithFilter" />
 
-    <Button
-        android:id="@+id/btEndlessList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EndlessList" />
+        <Button
+            android:id="@+id/btListWithBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListWithBottom" />
 
-    <Button
-        android:id="@+id/btEndlessListWithFilter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EndlessListWithFilter" />
+        <Button
+            android:id="@+id/btEndlessList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EndlessList" />
 
-    <Button
-        android:id="@+id/btBottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BottomSheet" />
+        <Button
+            android:id="@+id/btEndlessListWithFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EndlessListWithFilter" />
 
-    <Button
-        android:id="@+id/btDataBinding"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DataBinding" />
+        <Button
+            android:id="@+id/btExpandableList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ExpandableList" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btExpandableEndlessList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ExpandableEndlessList" />
+
+        <Button
+            android:id="@+id/btHeaderList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HeaderList" />
+
+        <Button
+            android:id="@+id/btBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BottomSheet" />
+
+        <Button
+            android:id="@+id/btDataBinding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DataBinding" />
+
+        <Button
+            android:id="@+id/btGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grid List" />
+
+        <Button
+            android:id="@+id/btTabbed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tabbed Activity" />
+        <Button
+            android:id="@+id/btCustomProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Progress Activity" />
+    </LinearLayout>
+</ScrollView>

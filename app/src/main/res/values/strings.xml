@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">ExamplesProject</string>
+
+    <!--bottomsheet-->
+    <string name="BackDropBottomSheetBehavior">br.com.examples.caique.examplesproject.view.bottomsheet.BackdropBottomSheetBehavior</string>
+    <string name="BottomSheetBehaviorGoogleMapsLike">br.com.examples.caique.examplesproject.view.bottomsheet.BottomSheetBehaviorGoogleMapsLike</string>
+    <string name="ScrollAwareFABBehavior">br.com.examples.caique.examplesproject.view.bottomsheet.ScrollAwareFABBehavior</string>
+    <string name="MergedAppBarLayoutBehavior">br.com.examples.caique.examplesproject.view.bottomsheet.MergedAppBarLayoutBehavior</string>
+    <string name="ScrollingAppBarLayoutBehavior">br.com.examples.caique.examplesproject.view.bottomsheet.ScrollingAppBarLayoutBehavior</string>
+    <!--bottomsheet/-->
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
     </string>
@@ -13,14 +22,12 @@
     <string name="title_activity_list_filter">Simples List With Filter</string>
     <string name="title_activity_endless_scroller">Endless Scroller</string>
     <string name="title_activity_endless_scroller_filter">Endless Scroller With Filter</string>
+    <string name="title_activity_expandable_list">Expandable List</string>
+    <string name="title_activity_expandable_endless_list">Expandable Endless List</string>
+    <string name="title_activity_header_list">Header List</string>
     <string name="title_activity_detail">Detail</string>
-
-    <!--bottomsheet-->
-    <string name="BackDropBottomSheetBehavior">br.com.examples.caique.examplesproject.common.view.bottomsheet.BackdropBottomSheetBehavior</string>
-    <string name="BottomSheetBehaviorGoogleMapsLike">br.com.examples.caique.examplesproject.common.view.bottomsheet.BottomSheetBehaviorGoogleMapsLike</string>
-    <string name="ScrollAwareFABBehavior">br.com.examples.caique.examplesproject.common.view.bottomsheet.ScrollAwareFABBehavior</string>
-    <string name="MergedAppBarLayoutBehavior">br.com.examples.caique.examplesproject.common.view.bottomsheet.MergedAppBarLayoutBehavior</string>
-    <string name="ScrollingAppBarLayoutBehavior">br.com.examples.caique.examplesproject.common.view.bottomsheet.ScrollingAppBarLayoutBehavior</string>
+    <string name="title_activity_grid_list">Grid List</string>
     <string name="title_activity_bottom">BottomActivity</string>
-    <!--bottomsheet/-->
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

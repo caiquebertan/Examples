@@ -19,37 +19,59 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".simpleLists.endlessList.EndlessScrollerActivity"
+            android:name=".viewexamples.lists.endlessList.EndlessScrollerActivity"
             android:label="@string/title_activity_endless_scroller"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".simpleLists.endlessList.EndlessScrollerWithFilterActivity"
+            android:name=".viewexamples.lists.endlessList.EndlessScrollerWithFilterActivity"
             android:label="@string/title_activity_endless_scroller_filter"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".simpleLists.list.ListActivity"
+            android:name=".viewexamples.lists.expandableList.ExpandableListActivity"
+            android:label="@string/title_activity_expandable_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewexamples.lists.expandableEndlessList.ExpandableEndlessListActivity"
+            android:label="@string/title_activity_expandable_endless_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewexamples.lists.headerList.HeaderListActivity"
+            android:label="@string/title_activity_header_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewexamples.lists.simpleList.ListActivity"
             android:label="@string/title_activity_list"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".simpleLists.list.ListWithFilterActivity"
+            android:name=".viewexamples.lists.simpleList.ListWithFilterActivity"
             android:label="@string/title_activity_list_filter"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".simpleLists.list.ListWithBottomActivity"
+            android:name=".viewexamples.lists.simpleList.ListWithBottomActivity"
             android:label="@string/title_activity_list_bottom"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".databinding.simple.DataBindingActivity"
+            android:name=".viewexamples.databinding.DataBindingActivity"
             android:label="@string/title_activity_data_binding"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".detail.DetailActivity"
+            android:name=".viewexamples.detail.DetailActivity"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".bottom.BottomSheetActivity"
+            android:name=".viewexamples.bottom.BottomSheetActivity"
             android:label="@string/title_activity_bottom"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewexamples.grid.GridActivity"
+            android:label="@string/title_activity_grid_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".viewexamples.grid.ImageFullActivity" />
+        <activity
+            android:name=".viewexamples.tabs.TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".viewexamples.progressCustom.CustomProgressActivity"></activity>
     </application>
 
 </manifest>
