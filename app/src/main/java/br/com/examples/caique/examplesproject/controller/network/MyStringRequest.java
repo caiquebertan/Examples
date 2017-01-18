@@ -59,7 +59,6 @@ public class MyStringRequest<C> {
 //                new Response.Listener<String>() {
 //                    @Override
 //                    public void onResponse(String response) {
-//                        //TODO: As long as not calling web
 //                        InputStream is = context.getResources().openRawResource(res);
 //                        Writer writer = new StringWriter();
 //                        char[] buffer = new char[1024];
@@ -79,7 +78,6 @@ public class MyStringRequest<C> {
 //                            }
 //                        }
 //                        response = writer.toString();
-//                        //TODO:\\
 //
 //                        postEvent(response);
 //                    }

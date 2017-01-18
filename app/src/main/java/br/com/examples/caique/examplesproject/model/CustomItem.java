@@ -41,7 +41,6 @@ public class CustomItem extends GenericEntity implements Serializable {
         return getName();
     }
 
-    //TODO:Only to Data Binding
     @BindingAdapter({"bind:image"})
     public static void loadImage(ImageView view, String image) {
         Picasso.with(view.getContext())
